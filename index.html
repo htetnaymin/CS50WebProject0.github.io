@@ -3,6 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/01267c7b45.js" crossorigin="anonymous"></script>
         <link href="index.css" rel="stylesheet">
         <title>Search</title>
     </head>
@@ -18,25 +19,21 @@
                 </li>
             </ul>
         </nav>
-        <div class="d-flex">
-            <div class="flex-fill"></div>
-            <div class="mt-5 pt-5">
-                <div style="max-width:50%; margin:auto;">
-                <img class="img-fluid" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo"/>
-                </div>
-                <form action="https://google.com/search" class="mt-5" >
-                    <div class="input-group px-3">
-                    <input type="text" name="q" class="rounded-pill form-control" >
-                    </div>
-                    <div class="text-center mt-4">
-                    <input type="submit" class="btn btn-light" value="Google Search" autocomplete="off">
-                    <input id="gbqfbb" class="btn btn-light" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnI" role="button" tabindex="0" type="submit" style="visibility: inherit;">
-                    </div>
-            </form>
-            </div>
-            <div class="flex-fill"></div>
+        <div class="mt-5 pt-4">
+
+                    <img style="max-width:272px; max-height:92px; display:block; margin:auto;" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo"/>
+
+                    <form action="https://google.com/search" class="mt-5 m-auto" style="max-width:582px;" >
+                        <label for="search" class=" rounded-pill bg-white shadow d-flex align-items-center mx-2" style="height:46px;">
+                            <i class="ps-3 pe-1 fas fa-magnifying-glass" style="color:#9ba0a3"></i>
+                            <input id="search" type="text" name="q" style="border:none; outline:0;" class="mx-2 w-100 h-75" >
+                        </label>
+
+                        <div class="text-center mt-4">
+                        <input type="submit" class="btn btn-light me-2" value="Google Search" autocomplete="off">
+                        <input id="gbqfbb" class="btn btn-light" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnI" role="button" tabindex="0" type="submit" style="visibility: inherit;">
+                        </div>
+                    </form>
         </div>
-    </div>
-    </div>
     </body>
 </html>
